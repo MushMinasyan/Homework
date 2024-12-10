@@ -1,6 +1,8 @@
 import "./App.css";
+import ItemList from "./components/list";
 
 function App() {
+  const names = ["poxos", "pedros", "aristakes"];
   const sections = [
     {
       id: "section-0",
@@ -42,6 +44,9 @@ function App() {
           ))}
         </section>
       ))}
+      <div>
+        <ItemList items={names} />
+      </div>
     </>
   );
 }
